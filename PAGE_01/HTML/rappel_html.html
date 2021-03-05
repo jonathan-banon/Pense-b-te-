@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="rappel_html.css">
+    <title>Pense-bete (HTML)</title>
+  </head>
+  <body>
+      <div id="bloc_page">
+          <header>
+              <img id="img01" src="images_html/HTML.png" alt="image HTML"/>
+          </header>
+          <nav>
+              <h1>RAPPEL HTML 5</h1>
+                <ul>
+                    <li><a href="#VOCABULAIRE">Vocabulaire</a></li>
+                    <li><a href="#TABLEAU">Tableau</a></li>
+                    <li><a href="#LIEN">Lien</a></li>
+                    <li><a href="#IMAGE">Images</a></li>
+                    <li><a href="#structure">Structure</a></li>
+                    <li><a href="#formulaire">Formulaire</a></li>
+                    <li><a href="#video">Vidée et audio</a></li>
+                </ul>
+          </nav>
+          <section>
+            <h2 id="VOCABULAIRE">VOCABULAIRE</h2>
+                <ul>
+                    <li><em><strong>&#60;!DOCTYPE html&#62;</strong></em> = doctype</li>
+                    <li><em><strong>&#60;html/&#62;</strong></em> = élement racine</li> 
+                    <li><em><strong>&#60;head/&#62;</strong></em> = contenu non affiché +info traité en premier par navigateur </li>
+                    <li><em><strong>&#60;meta charset="utf-8"&#62;</strong></em> = information sur la police employé</li>
+                    <li><em><strong>&#60;link rel="stylesheet" href="nom du fichier.css"&#62;</strong></em> = chemin en <em><strong>&#60;head&#62;</strong></em> pour le fichier ".css"</li>
+                    <li><em><strong>&#60;tittle/&#62;</strong></em> = titre apparent sur l onglet</li>
+                    <li><em><strong>&#60;body/&#62;</strong></em> = contenu affiché</li>
+                    <li><em><strong>&#60;h/&#62;</strong></em> = titre</li>
+                    <li><em><strong>&#60;p/&#62;</strong></em> = paragraphe</li>
+                    <li><em><strong>&#60;img src=""/&#62;</strong></em> = image source</li>
+                    <li><em><strong>&#60;ul/&#62;</strong></em> = unordored liste</li>
+                    <li><em><strong>&#60;ol/&#62;</strong></em> = liste ordonée
+                    <li><em><strong>&#60;li/&#62;</strong></em> = liste item</li>
+                    <li><em><strong>&#60;br&#62;</strong></em> = retour à la ligne (break)</li>
+                    <li><em><strong>&#60;... class=" intro"&#62;</strong></em> = définition d'un groupe "intro" </li>
+                    <li><em><strong>&#60;span class=""&#62;</strong></em> texte ciblé <em><strong>&#60;/span&#62;</strong></em> = islolation d'un texte pour modif</li>
+                    <li><em><strong>&#60;div&#62;...&#60;/div&#62;</strong></em> = élément de type bloc</li>
+                </ul>
+              <p><strong>En savoir plus</strong><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element" target="_blank"> MDN web docs .</a></p>
+          </section>
+          <section>
+            <h2 id="TABLEAU">TABLEAU</h2>
+                <table cellpadding= "25px" width="100%">
+                    <tr>
+                        <th>SYMBOLE</th>
+                        <th>ROLE</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong>Mise ne place des bordures (td) + fusion des bordures (table) en CSS</strong></td>
+                    </tr>
+                     <tr>
+                        <td><em><strong>&#60;table/&#62;</strong></em></td>
+                        <td>Mise en place tableau</td>
+                    </tr>
+                    <tr>
+                        <td><em>&#60;thead/&#62;</em>
+                        </td>
+                        <td>En-tête
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>&#60;tfoot/&#62;</em>
+                        </td>
+                        <td>Pied de page
+                        </td>
+                    </tr>
+                     <tr>
+                        <td><em>&#60;tbody/&#62;</em>
+                        </td>
+                        <td>Corps
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>&#60;caption/&#62;</em></td>
+                        <td>Titre (à considérer comme une ligne)</td>
+                    </tr>
+                    <tr>
+                        <td><em><strong>&#60;table cellpadding=""/&#62;</strong></em></td>
+                        <td>Espace bordure/cellule</td>
+                    </tr>
+                    <tr>
+                        <td><em><strong>&#60;table cellspacing=""/&#62;</strong></em></td>
+                        <td>Epaisseur bordures entre cellules</td>
+                    </tr>
+                    <tr>
+                        <td><em><strong>&#60;table width=""&#62;</strong></em></td>
+                        <td>Proportion largeur du tableau par rapport au conteneur</td>
+                    </tr>
+                    <tr>
+                        <td><em><strong>&#60;tr/&#62;</strong></em></td>
+                        <td>Ligne</td>
+                    </tr>
+                    <tr>
+                        <td><em>&#60;th/&#62;</em></td>
+                        <td>En-tête</td>
+                    </tr>
+                    <tr>
+                        <td><em><strong>&#60;td/&#62;</strong></em></td>
+                        <td>Cellule</td>
+                    </tr>
+                    <tr>
+                        <td><em><strong>&#60;td colspan=x/&#62;</strong></em></td>
+                        <td>Cellule=x colonnes</td>
+                    </tr>
+                    <tr>
+                        <td><em><strong>&#60;td rowspan=x/&#62;</strong></em></td>
+                        <td>Cellule=x lignes</td>
+                    </tr>
+                    <tr>
+                        <td><em><strong>&#60;td align=center &#62;</strong></em></td>
+                        <td>alignement horizontal</td>
+                    </tr>
+                    <tr>
+                        <td><em><strong>&#60;td valign=middle&#62;</strong></em></td>
+                        <td>alignement vertical</td>
+                </table>
+          </section>
+          <section>
+            <h2 id="LIEN">LIENS</h2>
+                <p><strong>Différents types de liens</strong></p>
+                    <ul>
+                        <li><strong>Page web :</strong> <br> <em><strong>&#60;a href="www.facebook.fr"&#62; Nom du lien &#60;/a&#62;</strong></em></li>  
+                        <li><strong>ID en 2 étapes</strong>:
+                            <ol>
+                                <li>Définition de l'ID UNIQUE : <br> <em><strong>&#60;h1 id= mon h1&#62; titre h1&#60;/h1&#62;</strong></em></li>
+                                <li>Lien ID :<br> <em><strong>&#60;a href="#mon h1""&#62; Nom du lien ID &#60;/a&#62;</strong></em>(</li>
+                            </ol>
+                        </li>
+                        <li><strong>Contact MAIL :</strong> <br> <em><strong>&#60;a href="mailto: nom du mail@bidule.com"/&#62; Message perso "ex: me contacter par mail" &#60;/a&#62;</strong></em></li>
+                        <li><strong>Fichier : </strong> <br> <em><strong>&#60;a href="nom du fichier.zip"&#62; texte du lien &#60;/a&#62;</strong></em> </li>
+                        <li><strong>Ouverture dans un nouvel onglet :</strong> <br> <em><strong>&#60;a href="www.blabla.fr" target="_blank"&#62; Nom du lien &#60;/a&#62;</strong></em></li>  
+                    </ul>
+          </section>
+          <section>
+            <h2 id="IMAGE">IMAGE</h2>
+              <p><strong>3 formats d'image différents :</strong></p>
+                    <ul>
+                        <li>image<strong>.jpeg</strong> = Conçu pour les photographies.</li>
+                        <li>image<strong>.png</strong> = Conçu pour les illustrations/logos/dessins.</li>
+                        <li>image<strong>.gif</strong> Conçu pour les illustration/animations.</li> 
+                    </ul>
+              <p><strong>Pour agrandir après un click de la souris une image</strong></p>
+                    <ul> 
+                        <li><em>&#60;a href="ancre vers image"&#62;</em> <br> <em>&#60;img src="." alt="." title="." widht="."/&#62;</em> <br> <em>&#60;/a&#62;</em></li>
+                    </ul>
+              <p><strong>Pour changer la dimension d'une photo :</strong> <a href="https://resizeimage.net" target="_blank";> Resizelmage.net</a></p>
+          </section>
+          <section>
+            <h2 id="structure">STRUCTURE D'UNE PAGE WEB</h2>
+                <img id="img02" src="images_html/Plan_html_5.png" alt="structure html5" > 
+                <p><em>&#60;hearder/&#62;</em> <br>
+                En-tête possédant un logo/une bannière/un slogan du site</p>
+                <p><em>&#60;footer/&#62;</em> <br>
+                Situé en bas du document,on y trouve des informations comme des liens de contact/nom d'auteur/mentions légales</p>
+                <p><em>&#60;nav/&#62;</em> <br>
+                Elle regroupe tous les principaux liens de navigation du site (par exemple,on peut y placer le menu principalesous forme de liste a puces </p>
+                <p><em>&#60;section&#62;</em> <br>
+                Regroupe du contenu en fonction de leur thématique au centre de la page</p>
+                <p><em>&#60;aside/&#62;</em> <br>
+                Contien des informations complémentaires au document que l'on visualise (généralement placé sur le côté)</p>
+                <p><em>&#60;article/&#62;</em> <br>
+                Sert a englober une portion généralement autonome de la page (exemple: des actualités)</p>
+          </section>
+          <section>
+            <h2 id="formulaire">FORMULAIRE</h2>
+                <h3>Mise en place</h3>
+                    <ul>
+                        <li><strong>Structure :</strong>
+                            <img id="img" src="images_html/img_01.png" alt="img_01"/>
+                        </li>
+                        <li><strong>Attributs sur le formulaire:</strong>
+                            <ul>
+                                <li><em>form method="post"</em> = méthode la plus utilisée pour les formulaires car elle permet d'envoyer un grand nombre d'informations. Les données saisies dans le formulaire ne transitent pas par la barre d'adresse.</li>
+                                <li><em>form action="chemin dossier PHP"</em> = adresse de la page ou du programme qui va traiter les informations </li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3>Zones de saisie basiques</h3>
+                    <ul>
+                        <li><strong>Zone de texte monoligne :</strong>
+                            <ol>
+                                <li><em>&#60;input /&#62;</em> = On insère une zone de texte dans un ligne</li>
+                                <li><em>&#60;input  type="texte/&#62;</em> = zone de type texte à une ligne</li>
+                                <li><em>&#60;input  type="texte name="nom du formulaire"/&#62;</em> = On donne un "nom" au formulaire pour le traitement via PHP</li>
+                                <img id="img" src="images_html/img_02.png" alt="img_02"/>
+                            </ol>
+                            <form method="post" action="dosiiser.php">
+                                <p>
+                                    <input type="text" name="form_01">
+                                </p>
+                            </form>
+                        </li>
+                        <li><strong>Libellés :</strong>
+                            <ol>
+                                <li>
+                                    <em>&#60;label&#62; Pseudo choisi &#60;/label&#62;</em> = Donne au lecteur l'info à donner sur le formulaire 
+                                </li>
+                                <a href="images_html/img_03.png">
+                                  <img id="img" src="images_html/img_03.png" alt="img_03"/>
+                                </a>
+                            </ol>
+                            <form method="post" actio="fichiser.php">
+                                <p>
+                                    <label for="form_02">Votre pseudo :</label>
+                                    <input type="text" name="form_02" id="form_02"/>
+                                </p>
+                            </form>
+                        </li>
+                        <li><strong>Attributs supplémentaires :</strong>
+                            <ul>
+                                <li><em>input size="."</em> = Aggrandissement du champ</li>
+                                <li><em>input maxlength="."</em> = Limitation du nombre de caractères</li>
+                                <li><em>input value="."</em> = Pré-remplissage du champ avec une valeur par défaut</li>
+                                <li><em>input placeholder="."</em> = Donner une indication qui disparaîtra lors du remplissage du champ</li>
+                            </ul>
+                            <form>
+                                <p>
+                                    <label for="form_03">Mangas préféré :</label>
+                                    <input type="text" name="form_03" id="form_03" size="25" maxlength="19" placeholder="Ex : Hunter X Hunter"/>
+                                </p>
+                            </form>
+                        </li>
+                        <li><strong>Zone de mot de passe</strong>
+                            <ul>
+                                <li><em>input type="password"</em></li>
+                            </ul>
+                            <form>
+                                <p>
+                                    <label for="pseudo_04">Votre mot de passe :</label> 
+                                    <input type="password" name="form_04" id="form_04" placeholder="0000"/>
+                                </p>
+                            </form>
+                        </li>
+                        <li><strong>Zone de texte mulitigne</strong>
+                            <ul>
+                                <li><em>&#60;textarea&#62;&#60;/textarea&#62;</em> = On insère une zone de texte multiligne</li>
+                                <li><em>textarea rows="."</em> = Hauteur du champs</li>
+                                <li><em>teaxtarea cols="."</em> = Longeur du champs</li>
+                                <a href="images_html/img_04.png" >
+                                    <img id="img" src="images_html/img_04.png" alt="img_04"/>
+                                </a>
+                            </ul>
+                            <form method="post" action="fichier.php">
+                                <p>
+                                    <label for="form_04">Des commentaires?</label> <br> 
+                                    <textarea name="form_04" id="form_04" cols="40" rows="5" placeholder="Je te retrouverai..."></textarea>
+                                </p>
+                            </form>
+                        </li>
+                    </ul>
+                <h3>Zone de saisies enrichies</h3>
+                    <ul>
+                        <li><em>input type="email"</em> = informe le navigateur que l'utilisateur doit saisir une adresse e-mail(voir de le corriger selon le navigateur)</li>
+                        <li><em>input type="url"</em> = informe le navigateur que l'utilisateur doit saisir une adresse </li>
+                        <li><em>input type="tel"</em> = champs dédié à un numéro de téléphone </li>
+                        <li><em>input type="search"</em> = Champs de recherche</li>
+                        <li>
+                            <em>input type="number"</em> = Permet de saisir un nombre entier
+                            <form method="post" action="fichier.php">
+                                <p>
+                                    <input name="form_05" id="form_05" type="number"/>
+                                </p>
+                            </form>
+                        </li>
+                        <li>
+                            <em>input type="range" min="0"  max="20" step="1"</em> = Permet de sélectionner un nombre avec un curseur (aussi appelé "slider")
+                            <form method="post" action="fichier.php">
+                                <p>
+                                    <input name="form_06" id="form_06" type="range" min="1" max="20" step="1"/>
+                                </p>
+                            </form>
+                        </li>
+                        <li>
+                            <em>input type="color"</em> = champs permettant de saisir une couleur
+                            <form method="post" action="fichier.php">
+                                <p>
+                                    <input name="form_06" id="form_06" type="color"/>
+                                </p>
+                            </form>
+                        </li>
+                        <li><strong>Dates</strong>
+                            <ul>
+                                <li><em>input type="date"</em> = Date</li>
+                                <li><em>input type="time" </em>= Heure</li>
+                                <li><em>input type="week"</em> = Semaine</li>
+                                <li><em>input type="month"</em> = Mois</li>
+                                <li><em>input type="datetime"</em> = Date et heure avec gestion du décalage horaire</li>
+                                <li><em>input type="datetme-local"</em> = Date et heure sans gestion du décalage horaire</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3>Elements d'option</h3>
+                    <ul>
+                        <li><strong>Case à cocher :</strong>
+                            <ul>
+                                <li><em>input type="checkbox"</em></li>
+                                <li><em>input type="checkbox" checked </em></li>
+                                <a href="images_html/img_05.png">
+                                    <img id="img" src="images_html/img_05.png" alt="img_05"/>
+                                </a>
+                            </ul>
+                            <form method="post" action="fichier.php">
+                                <p>
+                                    Je mange quoi ce soir? <br>
+                                    <input type="checkbox" name="choix_01" id="choix_01"/>
+                                    <label for="choix_01">Bolognaise!</label> <br>
+                                     <input type="checkbox" name="choix_02" id="choix_02"/>
+                                    <label for="choix_02">Bolognaise!</label>
+                                </p>
+                            </form>
+                        </li>
+                        <li><strong>Les zones d'options :</strong>
+                            <ul>
+                                <li><em>input type="radio"</em> = Zone d'option permettant de faire un choix parmis plusieurs possibilitées</li>
+                                <li><em>input type="radio" name="question_01" value="choix_01" id="choix_01"</em>
+                                    <ul>
+                                        <li><em>name=""</em> = Les options d'un même groupe possède le même nom (mise en place du choix d'option pour le navigateur)</li>
+                                        <li><em>value =""</em> = Chaque option doit avoir une valeur unique pour le navigateur</li>
+                                        <li><em>id=""</em> = Chaque option doit avoir un identifiant unique et donc différente du "name"</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form method="post" action="fichier.php">
+                                <p>
+                                    Je t'aime :<br>
+                                    <input type="radio" name="z_o" value="un_peu" id="un_peu"/> <label for="un_peu">Un peu</label> <br>
+                                    <input type="radio" name="z_o" value="beaucoup" id="beaucoup"/> <label for="beaucoup">Beaucoup</label> <br>
+                                    <input type="radio" name="z_o" value="passionément" id="passionément"/> <label for="passionément">Passionément</label> <br>
+                                </p>
+                            </form>
+                        </li>
+                        <li><strong>Listes déroulantes:</strong>
+                            <ul>
+                                <li>
+                                    <em>&#60;select name="liste_01" id="liste_01&#62;</em> <br> <em>&#60;optgroup label="groupe_01"&#62;</em>  <br> <em>&#60;option value="option_01" selected&#62; Option 01 &#60;/option&#62;</em> <br> <em>&#60;/optgroup&#62;</em> <br> <em>&#60;/select&#62;</em>
+                                    <ul>
+                                        <li><em>select</em> = Indique le début et la fin de la liste déroulante</li>
+                                        <li><em>optgoup</em> = Indique le début et la fin d'on groupe d'option</li>
+                                        <li><em>option</em> = Choix possible dans la liste déroulante</li>
+                                        <li><em>selected</em> = Option validée par défaut</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form method="post" action="fichier.php">
+                                <p>
+                                    Tu es plutôt 
+                                    <select name="liste_01" id="liste_01">
+                                        <option value="recto">Recto</option>
+                                        <option value="verso">Verso</option>
+                                    </select>
+                                </p>
+                            </form>
+                        </li>
+                    </ul>
+              <h3>Finaliser et envoyer</h3>
+                <ul>
+                    <li><strong>Regrouper les champs :</strong> 
+                        <ul>
+                            <li><em>&#60;fieldset&#62; &#60;/fieldset&#62;</em> = Regroupement de champs dans un groupe</li>
+                            <li><em>&#60;legend&#62; &#60;/legend&#62;</em> = Titre du groupe</li>
+                            
+                        </ul>
+                        <form method="post" action="fichise.php">
+                            <p>
+                                <fieldset>
+                                    <legend>Vos Coordonées</legend>
+                                    <label for="nom">C est quoi ton blaz?</label> <br>
+                                    <select name="nom" id="nom">
+                                        <option value="victime" >Victime</option>
+                                        <option value="petite_bite">Petite bite</option>
+                                    </select> <br> 
+                                    <label for="e-mail">Un e-mail?</label> <br> 
+                                    <input type="text" name="e-mail" id="e-mail" placeholder="En vrai je m'en fou ^^"/>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Votre avis</legend>
+                                    Ce chapitre est : <br> 
+                                    
+                                    <input type="radio" name="avis" value="longt" id="longt"/>
+                                    <label for="longt">Longt</label> 
+                                    
+                                    <input type="radio" name="avis" value="trés_longt" id="trés_longt"/>
+                                    <label for="trés_longt">Trés longt</label>
+                                    
+                                    <input type="radio" name="avis" value="trop_longt" id="trop_longt"/>
+                                    <label for="trop_longt">Trop longt</label>
+                                    
+                                </fieldset>
+                        </form>
+                    </li>
+                    <li><strong>Attributs :</strong>
+                        <ul>
+                            <li><em>input autofocus</em> = Place automatiquement le curseur après chargement de la page</li>
+                            <li><strong>A savoir :</strong> <br>(:focus)Pour changer le style via CSS</li>
+                            <li><em>input requiered</em> = Indication au visiteur qu un champ est obligatoire</li>
+                            <li><strong>A savoir :</strong> <br>(:requiered)Pour changer le style via CSS</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bouton d'envoi :</strong>
+                        <ul>
+                            <li><em>input type="submit"</em> = Bouton d'envoi du formulaire,le visiteur sera conduit à la page indiquée dans l'attribut <em>action</em> du formulaire</li>
+                            <li><em>input type="reset"</em> = remise à zéro du formulaire</li>
+                            <li><em>input type="image"</em> = équivalent du bouton <em>reset</em> mais sous forme d'image.Rajout de lélément <em>src</em> pour indiquer l'URL de l'image</li>
+                            <li><em>input type="bouton"</em> = Bouton sans valeur par défaut,paut être exploité par JS</li>
+                        </ul>
+                        <p>On peut changer le texte affiché à l'intérieur des boutons avec l'attribut <em>value</em></p>
+                    </li>
+                </ul>
+          </section>
+          <section>
+              <h2 id="video">Vidéo et audio</h2>
+                <h3>Formats</h3>
+                    <ul>
+                        <li><strong>Format audio :</strong>
+                            <ul>
+                                <li><strong>.MP3 :</strong>L'un des formats les plus compatibles</li>
+                                <li><strong>.AAC :</strong>Utilisé majoritairement par Apple sur iTunes, c'est un format de bonne qualité. Les iPod, iPhone et autres iPad savent les lire sans problème</li>
+                                <li><strong>.OOG :</strong> Le format Ogg Vorbis est très répandu dans le monde du logiciel libre, notamment sous Linux. Ce format a l'avantage d'être libre, c'est-à-dire qu'il n'est protégé par aucun brevet</li>
+                                <li><strong>.WAV :</strong>A évitez autant que possible de l'utiliser car le fichier est très volumineux avec ce format. C'est un peu l'équivalent du Bitmap (BMP) pour l'audio</li>
+                            </ul>
+                            <p>La compatibilité dépend des navigateurs, mais elle évolue dans le bon sens au fil du temps. pour connaître la compatibilité actuelle du MP3, AAC,  OGG, WAV...<a target="_blank" href="https://caniuse.com/#feat=mp3">Can i use</a></p>
+                        </li>
+                        <li><strong>Format video :</strong>
+                            <ul>
+                                <li><strong>Format conteneur :</strong> C'est un peu comme une boîte qui va servir à contenir les deux éléments ci-dessous. On reconnaît en général le type de conteneur à l'extension du fichier : AVI, MP4, MKV…
+                                </li>
+                                <li><strong>Codec audio :</strong>C'est le format du son de la vidéo, généralement compressé. Nous venons de les voir, on utilise les mêmes : MP3, AAC, OGG…</li>
+                                <li><strong>Codec vidéo :</strong> C'est le format qui va compresser les images. C'est là que les choses se corsent, car ces formats sont complexes et on ne peut pas toujours les utiliser gratuitement. Les principaux à connaître pour le Web sont :
+                                    <ul>
+                                        <li><strong>H.264 :</strong> L'un des plus puissants et des plus utilisés aujourd'hui… mais il n'est pas 100% gratuit. En fait, on peut l'utiliser gratuitement dans certains cas (comme la diffusion de vidéos sur un site web personnel), mais il y a un flou juridique qui fait qu'il est risqué de l'utiliser à tout va.</li>
+                                        <li><strong>Ogg Theroa :</strong>un codec gratuit et libre de droits, mais moins puissant que H.264. Il est bien reconnu sous Linux mais, sous Windows, il faut installer des programmes pour pouvoir le lire.</li>
+                                        <li><strong>WebM :</strong>Un autre codec gratuit et libre de droits, plus récent. Proposé par Google, c'est le concurrent le plus sérieux de H.264 à l'heure actuelle</li>
+                                    </ul>    
+                                </li>
+                            </ul>
+                            <p>Pour connaître la compatibilité actuelle <a target="_blank" href="https://caniuse.com/#feat=mpeg4">Can i use</a></p>
+                            <p>Pour convertir des vidéos dans diférents formats :<a target="_blank" href="http://www.mirovideoconverter.com/">Mirovideoconverteur</a></p>
+                        </li>
+                    </ul>
+            <h3>Insertion</h3>
+                <ul>
+                    <li><strong>Audio :</strong>
+                        <ul>
+                            <li><em>&#60;audio src="fichier.mp3"&#62;</em> <br> <em>Message pour les navigateur ne gérant pas cette balise</em> <br>  <em>&#60;/audio&#62;</em></li>
+                            <li><em>controls:</em> =Pour ajouter les boutons « Lecture », « Pause » et la barre de défilement.</li>
+                            <li><em>width :</em> = Modif de la largeurde l'outil de lecture audio</li>
+                            <li><em>loop :</em> = Music joué en boucle</li>
+                            <li><em>autoplay : </em> = Musique joué dès le chargement de la page</li>
+                            <li><em>preload:</em> : Indique si la musique peut être préchargée dès le chargement de la page via différents attributs :
+                                <ul>
+                                    <li><em>auto</em> = Par défaut,le navigateur décide si il doit précharger toute la musique (uniquement les métadonnées ou rien )</li>
+                                    <li><em>metadata</em> = Charge uniquement les métadonnées(durée...)</li>
+                                    <li><em>none</em> = Pas de téléchargement (Utile pour ne pas gaspiller de bande passante sur un site)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Vidéo :</strong>
+                        <ul>
+                            <li><em>&#60;video src="fichier.wwebm"&#62;</em> <em>&#60;/video&#62;</em></li>
+                            <li><em>poster :</em> = Image à afficher à la place de la vidéo tant que celle-ci n'est pas lancée</li>
+                            <li><em>controls :</em> = Pour ajouter les boutons « Lecture », « Pause » et la barre de défilement</li>
+                            <li><em>width :</em> = Largeur</li>
+                            <li><em>height :</em> = Hauteur</li>
+                            <li><em>loop :</em> = Vidéo joué en boucle</li>
+                            <li><em>autoplay : </em> =La vidéo sera jouée dès le chargement de la page</li>
+                            <li><em>preload:</em> = Indique si la musique peut être préchargée dès le chargement de la page via différents attributs :
+                                <ul>
+                                    <li><em>auto</em> = Par défaut,le navigateur décide si il doit précharger toute la vidéo (uniquement les métadonnées ou rien )</li>
+                                    <li><em>metadata</em> = Charge uniquement les métadonnées(durée...)</li>
+                                    <li><em>none</em> = Pas de téléchargement (Utile pour ne pas gaspiller de bande passante sur un site)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+          </section>
+      </div>    
+    </body>
+</html>

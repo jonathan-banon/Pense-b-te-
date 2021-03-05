@@ -1,0 +1,59 @@
+body
+{
+    background-image: url(image/fond.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:  "Baloo Thambi 2", cursive , sans-serif; 
+    font-size: 1.2em;
+}
+
+
+#bloc_page
+{
+    width: 900px;
+    height: 900px;
+    margin: auto;
+}
+
+@media all and (max-width:1026px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+}
+
+.img
+{
+    display: block;
+    margin: 2% 3% 3% 1%;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.flex_01{
+    display: flex;
+    justify-content: center;
+}
+
+.flex_02{
+    display: flex;
+    justify-content:space-between; 
+}
+
+h1
+{
+    background-color: red;
+    text-align: center;
+    border: 0.5em red inset;  
+}
+
+
+ul
+{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 0% 1% 1% 0%;
+    padding-bottom: 1%;
+}

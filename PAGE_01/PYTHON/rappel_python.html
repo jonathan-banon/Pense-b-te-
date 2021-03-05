@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rappel Pyhton</title>
+        <link rel="stylesheet" href="rappel_python.css">
+    </head>
+    <body>
+        <div id="bloc_page">
+            <header>
+                <img id="img_01" src=" image_python/img_01.png"/>
+            </header>
+            <nav>
+            <h1>PYTHON</h1>
+                <ul>
+                    <li><a href="#voc">Vocabulaire</a>
+                        <ul>
+                            <li><a href="#1_1">Affichage</a></li>
+                            <li><a href="#1_2">Mouvement</a></li>
+                            <li><a href="#1_3">Boucle</a></li>
+                            <li><a href="#1_4">Mémorisation d'une variable</a></li>
+                            <li><a href="#1_5">Quitter un programme</a></li>
+                            <li><a href="#1_6">Méthodes</a></li>
+                            <li><a href="#1_7">Module</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#prog">Programmes interactifs</a>
+                        <ul>
+                            <li><a href="#2_1">Introduction</a></li>
+                            <li><a href="#2_2">Conditionner une action</a></li>
+                            <li><a href="#2_3">Créer une fonction</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#algo">Les algorithmes</a>
+                        <ul>
+                            <li><a href="#3_1">Vocabulaire</a></li>
+                            <li><a href="#3_2">Tableaux</a></li>
+                            <li><a href="#3_3">Liste chaînée</a></li>
+                            <li><a href="#3_4">Pile</a></li>
+                            <li><a href="#3_5">File</a></li>
+                            <li><a href="#3_6">Arbre binaire</a></li>
+                            <li><a href="#3_7">Graphe</a></li>
+                            <li><a href="#3_8">Triage des informations</a></li>
+                            <li>
+                                <a href="#3_9">Complexité</a>
+                            </li>
+                            <li>
+                                <a href="#3_10">Récursivité</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <h2 id="voc">Vocabulaire</h2>
+                    <h3 id="1_1">Affichage</h3>
+                        <ul>
+                            <li><strong>Texte</strong>
+                                <ul>
+                                    <li><em># -*- coding: utf8 -*-</em> = Première ligne pour gestion des accents</li>
+                                    <li><em>return</em> = Renvoi d'une valeur</li>
+                                    <li>
+                                        <ul>
+                                            <li><em>print("...")</em> = Affichage d'un texte (imprimer)</li>
+                                                <img id="img" src="image_python/img_02.png" alt="img02"/>
+                                            <li><em>print("....", end = "")</em> = Pas de retour à la ligne sans espace</li>
+                                            <li><em>print=("")</em> = aller à la ligne</li>
+                                            <li><em>print("....", end = " ")</em> = Pas de retour à la ligne avec esapce</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Chiffre</strong>
+                                <ul>
+                                    <li><em>print(1)</em> = affichage de chiffe (sans "")</li>
+                                    <li><em>print(1+1)</em> = d'affichage d'un resultat d'équation</li>
+                                    <li><em>print((2*3)-2)</em> = règle de prioritée à  respecter avec les parenthèses</li>
+                                    <li><em>print(1, = end " ")</em> = Pas de retour à la ligne</li>
+                                    <li><em>2**3</em> = 2 puissance 3</li>
+                                    <li><em>2//2</em> = Division en chiffre entier</li>
+                                    <li><em>14 % 5 = 4</em> = Modulo (division + reste de le division ) </li>
+                                    <li><em> == </em> = Egalité pour un condition</li>
+                                    <li><em> != </em> = Inégalité</li>
+                                </ul>
+                            </li>
+                            <li><strong>Texte + Chiffre</strong>
+                                <ul>
+                                    <li><em>print ("j'ai ", âge, "je suis né le", date de naissance)</em> = association de textes et de chiffres <strong>(, )</strong> sur la même ligne avec un espace</li>
+                                </ul>
+                            </li>
+                            <li><strong>Liste</strong>
+                                <ul>
+                                    <li><em> liste = ["objet_00" , "objet_01" , ..ect ] </em> = Succession de plusieurs objets</li>
+                                    <li><em> liste [ 0 ] </em> = Sélection de l'objet "objet_00"</li>
+                                    <li><em>liste [ 0 ] = nouveau_item</em> = Chanhement de valeur de l'item placé en "0"</li>
+                                    <li><em>len(list)</em> = Demande du nombre d'item sur une liste</li>
+                                </ul>
+                            </li>
+                            <li><strong>Tuples</strong>
+                                <ul>
+                                    <li><em> mes_coordonées = ( 0602010503 , "j.b@outlook.fr" )</em></li> = structure dont le nombre d'éléments ne bouge pas
+                                </ul>
+                            </li>
+                            <li><strong>Dictionnaire</strong>
+                                <ul>
+                                    <img id ="img" src="image_python/img_19.png"/>
+                                    <li>Structure de données qui permet d'associer des objets deux à deux</li>
+                                    <li>
+                                        <em> english_french_dict [ " un " ]</em> = Selection de la valeur accordée à la clé " un "
+                                    </li>
+                                    <li>
+                                        <em>dictionnaire["01"][0]</em> = Demande d'affichage de la première valeur de la clé "01"
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong> Demande de type </strong>
+                                <ul>
+                                    <img id =img src="image_python/img_20.png" />
+                                </ul>
+                            </li>
+                            <li><strong>Option d'affichage</strong>
+                                <ul>
+                                    <img id="img" src="image_python/img_05.png" alt="img_05"/>
+                                    <li><em>sep=" "</em> = affichage entre les éléments</li>
+                                    <li><em>end=" "</em> = affichage de fin </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <h3 id="1_2">Mouvement</h3>
+                        <ul>
+                            <li><em>from robot import*</em>
+                                <ul>
+                                    <li><em>from</em> = Ciblage </li>
+                                    <li><em>robot</em> = Nom du module executant</li>
+                                    <li><em>import *</em> = Action</li>
+                                    <li>A savoir que la formulation complète n'a pas besoin d être rappelée dans la suite du code</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <h3 id="1_3">Boucle</h3>
+                        <ul>
+                            <li><strong>Simple :</strong>
+                                <img id="img" src="image_python/img_28.png" alt="img_28">
+                                <ul>
+                                    <li><em> for </em>  = Introduction d'une action</li>
+                                    <li><em> loop </em> = Boucle</li>
+                                    <li><em> in range(5):</em> = Répétitionx5</li>
+                                </ul>
+                            </li>
+                            <li><strong>Imbriqée :</strong>
+                            <img id="img" src="image_python/img_03.png" alt="img03"/>
+                            </li>
+                            <li><strong>Tant que :</strong>
+                                <img id="img" src="image_python/img_07.png" alt="img"/>
+                                    <ul>
+                                        <li><em>len(votes)</em> : Fonction renvoyant une valeur dans un objet</li>
+                                    </ul>
+                            </li>
+                            <li><strong>Pour chaque :</strong>
+                                <img id="img" src="image_python/img_29.png" src="img_29">
+                            </li> 
+                        </ul>
+                        <h3 id="1_4">Mémorisation / Suppression d'une variable</h3>
+                            <ul>
+                                <li><strong>Mémorisation :</strong>
+                                    <ul>
+                                        <li><strong>Simple</strong>
+                                            <ul>
+                                                <li><em>nbPiècesJaunes = chiffre associé</em> : méthode "CamelCase" </li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Booléenne</strong>
+                                            <ul>
+                                                <li><em>riche = (nbPiecesJaunes > 10 )</em> : variable booléenne (vrai / faux)</li>
+                                                <li><em>toujoursVrai = true</em> = association d'un résultat booléen sur une variable</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><strong>Supression :</strong>
+                                    <ul>
+                                        <li><em>del ( nbPiècesJaunes )</em></li>
+                                    </ul>
+                                </li>
+                                <li><strong>Règles de syntaxe :</strong>
+                                    <ul> 
+                                        <li><strong>Caractères autorisés :</strong>
+                                            <ul>
+                                                <li>Lettres majuscules</li>
+                                                <li>Lettres minuscules</li>
+                                                <li>Le caractère "_"</li>
+                                            </ul>
+                                        </li>
+                                        <li>L identifiant se caractérise de caractères collés</li>
+                                        <li>Le premier caractère du nom d'une variable ne peut être un chiffre</li>
+                                        <li>Mots clés du language ne peuvent être utilisés pour nommer une variable (accent autorisé)</li>
+                                        <li>Calcules autorisés dans le champs du chifrre associé</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        <h3 id="1_5">Quittez un programme</h3>
+                            <ul>
+                                <li><em>pass</em> = sortie de programme (demande de ne rien faire )</li>
+                            </ul>
+                        <h3 id="1_6">Méthodes</h3>
+                            <ul>
+                                <li><strong>Texte :</strong>
+                                    <ul>
+                                        <li><em>"".capitalize()</em> = Mettre la première lettre en maj</li>
+                                        <li><em>"".split()</em> = Séparation des charactères</li>
+                                        <li><em>"".strip()</em> = Affichage sans espaces</li>
+                                        <li><em>"".upper()</em> = Affichage en maj</li>
+                                        <li><em>"".lower()</em> = Affichage en min</li>
+                                        <li><em>"{} a dit : {}".format("il", "non")</em> = "il a dit non"</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Chiffre :</strong>
+                                    <ul>
+                                        <li><em>().is_integer()</em> = Vérifie si un nombre est entier</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Liste :</strong>
+                                    <ul>
+                                        <li><em>liste.index(item_01)</em> = Demande du positionnement "item_01"</li>
+                                        <li><em>liste.append(item)</em> = Ajout d'un item à la fin d'une liste</li>
+                                        <li><em>liste.insert(4, "item")</em> = Inesrtion de l'item dans la liste en "4"</li>
+                                        <li><em>liste.pop()</em> = Suppresion du dernier élément d'une liste</li>
+                                        <li><em>liste.remove(item_01)</em> = Suppresion du premier élément d'une liste avec la valeur "item_01"</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Dictionnaire :</strong>
+                                    <ul>
+                                        <li>
+                                            <em>dico.update( {"clé_01": ""} {"clé_02": ""})</em> = Changement d"une valeur via sa clé 
+                                        </li>
+                                        <li>
+                                            <em>dico.pop("clé")</em> = Suppression d'une valeur via sa clé
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                <h3 id="1_7">Modules</h3>
+                    <p>Un module est une extension ( à mettre dans les premières lignes de code ) permettant d'étendre les possibiltées en fonction des besoins</p>    
+                    <ul>
+                        <li><strong>Random :</strong>
+                            <ul>
+                                <li><em>import random</em>
+                                    <ul>
+                                        <li><em>import</em> = commande pour insérer un module </li>
+                                        <li><em>random</em> = Module permettant de fair un choix aléatoire dans une liste</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <em>variable = random.randint( 0, len(list) -1 )</em>
+                                    <ul>
+                                        <li><em>random.randit</em> = mise en place de la méthode "randit" sur le module "random"</li>
+                                        <li><em>( 0, len(list) - 1 )</em> = Désignation de tous les éléments de la liste </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Json :</strong>
+                            <ul>
+                                "JS OBJECT NOTATION", format de données permettant d'imbriquer des listes les unes dans les autres
+                                <li>Pour lire des données via un fichiers "json" :
+                                    <ul>
+                                        <li>
+                                            Création d'un fichiers externe pour y placer les données
+                                            <img id="img" src="image_python/img_30.png" alt="img_30">
+                                        </li>
+                                        <li>
+                                            Définir une fonction pour lire les valeurs du fichier extérieur avec une liste vide
+                                            <img id="img" src="image_python/img_31.png" alt="img_31">
+                                        </li>
+                                        <li>
+                                            Utiliser le fichier externe en tant que fichier "f" via le bloc <strong>with</strong>
+                                            <img id="img" src="image_python/img_32.png">
+                                        </li>
+                                        <li>Importer le module "json"</li>
+                                         <li>
+                                            Associer à une variable la méthode <strong>json.load()</strong> pour charger les données d'un fichier "f" et les transformer en données "json"
+                                            <a href="image_python/img_33.png">
+                                                <img id="img" src="image_python/img_33%20.png" width="100%"  alt="img_33">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            Créer une boucle "for" qui associe une clé pour chaque entrée dans la liste vide 
+                                            <img id="img" src="image_python/img_34.png" alt="img_34">
+                                        </li>
+                                        <li>
+                                            Demander le retour de la liste
+                                            <img id="img" src="image_python/img_35.png" alt="img_35">
+                                        </li>
+                                        <li>
+                                            Définir une fonction qui choisira une un élément au hasard dans la liste "get_random_character"
+                                            <img id="img" src="image_python/img_36.png" alt="img_36">
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                </ul>
+            </section>
+            <section>
+                <h2 id ="prog">Programmes interactifs</h2>
+                    <h3 id="2_1">Introduction</h3>
+                        <ul>
+                            <p>La sortie n'est lue qu'une fois l'exécution terminée. On peut ainsi afficher une partie de la sortie tout de suite ou attendre un peu, c'est la même chose pour le système d'évaluation : l'important est de lire les données dans l'ordre et d'écrire les bons résultats dans l'ordre.</p>
+                        
+                            <li><em>nom = lireLigne()</em> : Entrée de type texte </li>
+                            <li><em>année = lireEntier()</em> : Entrée de type chiffre
+                                <ul>
+                                    <li><em>nbSachets = int(input())</em> : Récupère le premier entier de l'entrée (qui correspond au nombre de sachets) et le stocke dans la variable nbSachets, Permet de prendre un entier sur l'entrée
+                                        <ul>
+                                            <li><em>int</em> = Entier</li>
+                                            <li><em>input</em> = Entrée</li>
+                                            <li><em>input("text affiché avant l'entrée")</em></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li><strong>A savoir : </strong> 
+                                <ul>
+                                    <li>Toutes formules avec changement dans le temps dois se trouver dans la boucle qui la concerne</li>
+                                    <li>On appelle <strong>portée</strong> d'une variable l'ensemble des endroits du programme où elle existe. En Python, la portée d'une variable s'étend donc dans tout le programme dès qu'elle reçoit sa première valeur.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                <h3 id="2_2">Conditionner une action</h3>
+                    <ul>
+                        <li><strong>Si :</strong></li>
+                        <img id="img" src="image_python/img_06.png" alt="img_06"/>
+                            <ul>
+                                <li>Si <em>âge</em> est inférieur à <em>10</em>, La condition est rempli et l action indentée est validée</li>
+                                <li><em>>=</em> : Symbole pour une condition supérieur ou égale</li>
+                                <li><em> == </em> : Symbole pour une condition d'égalité</li>
+                            </ul>
+                        <li><strong>Si (..) and (..) :</strong></li>
+                            <img id="img" src="image_python/img_21.png" alt="img_21"/>
+                        <li><strong>Si (..) or (..)</strong></li>
+                            <img id="img" src="image_python/img_22.png" alt="img_21"/>   
+                        <li><strong>Si / Sinon :</strong>
+                            <img id="img" src="image_python/img_08.png" alt="img"/>
+                        </li>
+                        <li><strong>Sinon si:</strong>
+                            <ul>
+                                <li>Structure de base
+                                    <img id="img" src="image_python/img_24.ng.png" alt="mig_24"/>
+                                </li>
+                                <li>Structure simplifié : <em>elif</em>
+                                    <img id="img" src="image_python/img_25.png" alt="img_25"/>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li><strong>Not</strong>
+                            <a href="image_python/img_23.png" width="400px">
+                                <img id="img" src="image_python/img_23.png" alt="img_23"/>
+                            </a>
+                        </li>
+                    </ul>
+                <h3 id="2_3">Créer une fonction</h3>
+                <ul>
+                    <p>Une fonction est un ensemble de commandes regroupées en un seul nom unique dans le but de les utiliser plusieurs fois dans un programme.</p>
+                    <li><strong>Assignation d'un nom unique :</strong>
+                        <img id="img" src="image_python/img_26.png" alt="img_26"> 
+                    </li>
+                    <li><strong>Assignation d'un paramètre :</strong>
+                        <p>Un paramètre est une variable que l'on ajoute à une fonction</p>
+                        <img id="img" src="image_python/img_27.png" alt="img_27">
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="algo">Les algorithmes</h2>
+                    <h3 id="3_1">Vocabulaire</h3>
+                    <ul>
+                        <li><strong>Type de donnée :</strong>
+                            <ul>
+                                <li>Nombres</li>
+                                 <li>Chaînes de charactères</li>
+                                <li>Booléens : vrai / faux</li>
+                            </ul>
+                        </li>
+                        <li><strong>Structure de donnée :</strong>
+                            <ul>
+                                <li>Definition : 
+                                    <ul>
+                                        <li>Différents types d'informations définis et utilisé dans un programme</li>
+                                    </ul>
+                                </li>
+                                <li>Rôle : 
+                                    <ul>
+                                        <li>Une structure permet de stocker plusieurs données de même type ou de types différents dans un seul conteneur (la structure). Une structure est composée de plusieurs champs, chaque champ correspondant à une donnée.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Opération :</strong>
+                            <ul>
+                                <li>Def :
+                                    <ul>
+                                        <li>Utilisation possible de la structure de données ( créer / lire / modifier / supprimer )</li>
+                                        <li>CRUD : Create Read Update Delete</li>
+                                        <li>Les trois dernières dépendent également d’une autre opération : la recherche ! Il faut en effet trouver l’élément demandé dans une structure avant de pouvoir le lire, le modifier ou le supprimer.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3 id="3_2">Tableaux</h3>
+                    <ul>
+                        <li><strong>Index :</strong> <br> Position associé à chaque élément dans le tableau (liste) <br> Attention, le premier élément de la liste est à l’index 0 et non 1 </li>
+                    </ul>
+                <h3 id="3_3">Liste chaînée</h3>
+                    <ul>
+                        <li><strong>Definition :</strong> <br>Ensemble de valeurs enregistrées dans des endroits différents de la mémoire. À la différence d’un tableau qui contient un nombre fixe d’éléments, la liste chaînée est très souple : on peut ajouter ou supprimer des éléments </li>
+                        <li><strong>Cellule :</strong>
+                        <br> Valeur d'une liste chaînée, chaque cellule est relié aux autres par des pointeurs 
+                            <ul>
+                                <li><strong>Cellule de tête : </strong> première cellule </li>
+                                <li><strong>Cellule de queue :</strong> dernière cellule</li>
+                            </ul>
+                        </li>
+                        <li><strong>Pointeur :</strong> <br> Un pointeur est, de manière très schématisée, l’adresse d’un autre élément.Il s’agit d’une variable qui contient une adresse mémoire. Cela permet de savoir où est enregistrée une autre donnée</li>
+                        <li><strong>Rôle :</strong> <br> Une liste chaînée est un peu comme une chasse au trésor informatique. Votre première cellule est comme le premier indice : elle contient l’adresse vous permettant de vous rendre au second indice et ainsi de suite. Le dernier endroit visité n’a pas d’indice. L’informatique n’aimant pas le vide, nous dirons que le dernier élément d’une liste a un pointeur égal à 'valeur nulle' ('NULL' en C, 'None' en Python...)</li>
+                        <li><strong>Opération courante :</strong>
+                            <ul>
+                                <li><strong>Insertion en tête de liste</strong></li>
+                                <li><strong>Insertion en queue de liste :  </strong> <br> L’ajout d’une cellule en queue de liste est un peu plus compliqué que l’insertion en tête de liste car il faut parcourir toute la liste avant de trouver la cellule dont le pointeur est nul</li>
+                                <li><strong>Retrouver une valeur en parcourant la liste</strong> <br> Étant donné que nous ne savons pas où se trouve la valeur recherchée, nous allons commencer par le premier élément de la liste, puis avancer jusqu’à le trouver. Retrouver une valeur demande de parcourir une partie (voire la totalité) de la liste avant de trouver une correspondance</li>
+                            </ul>
+                        </li>
+                        <li><strong>Table de hachage</strong>
+                            <ul>
+                                <li><strong>Definition :</strong> <br> Structure de donnée qui permet d'associer une valeur à une clé (mot ou chiffre) et non plus à un indice</li>
+                                <li><strong>Fonctionnement :</strong> <br> On les appelle également des dictionnaires car les tables de hachage fonctionnent de la même manière : elles associent une clé (un mot dans le cas d’un dictionnaire) à une valeur (la définition d’un mot).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3 id="3_4">Pile</h3>
+                    <ul>
+                        <li><strong>Definition :</strong> <br> Structure de donnée qui donne accès en priorité aux dernières données ajoutées. Ainsi, la dernière information ajoutée sera la première à en sortir
+                        <li><strong>Exemple :</strong> <br> Vous empilez les données comme vous le feriez avec des t-shirts dans votre armoire, la seconde vient "au-dessus" de la première</li>
+                        <li>Traitement de données <strong>LIFO</strong> (Last In First Out / dernier ajouté premier parti)</li>
+                        <li><strong>Opérations courantes :</strong>
+                            <ul>
+                                <li>Initialiser</li>
+                                <li>EstVide</li>
+                                <li>EstPlein</li>
+                                <li>AccederSommet</li>
+                                <li>Empiler</li>
+                                <li>Depiler</li>
+                                <li>Vider</li>
+                                <li>Détruire</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3 id="3_5">File</h3>
+                    <ul>
+                        <li><strong>Definition :</strong> <br> Structure de donnée dans laquelle on accède aux éléments suivant la règle du premier arrivé premier sorti</li>
+                        <li><strong>Exemple :</strong> <br> En file d'attente,plus vous arrivez tôt et plus vous partez tôt</li>
+                        <li>Triatement de donnée <strong>FIFO</strong> (First In First Out)</li>
+                        <li><strong>Opérations courantes :</strong>
+                            <ul>
+                                <li>Initialiser</li>
+                                <li>Estvide</li>
+                                <li>Estpleine</li>
+                                <li>AccederTete</li>
+                                <li>Enfiler</li>
+                                <li>Defiler</li>
+                                <li>Vider</li>
+                                <li>Detruire</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3 id="3_6">Arbre binnaire</h3>
+                    <ul>
+                        <li><strong>Definition :</strong> <br> Structure analogue à une liste chaînée, sauf que chaque cellule possède jusqu’à deux suivants. Par convention, on convient d’appeler fils gauche et fils droit les deux fils d’un nœud. Le fils gauche et le fils droit d’un nœud peuvent ne pas exister (pointeur égal à NULL). L’accès à l’arbre est donné par un pointeur qui contient l’adresse de la racine</li>
+                        <li><strong>Fonctionnement :</strong> 
+                            <ul>
+                                <li><strong>Cellule mère :</strong> Cellule parent (Première cellule mère compose la raçine)</li>
+                                <li><strong>Cellule fille :</strong> Cellule enfant</li>
+                                <li><strong>Noeud / Sommet :</strong> Terminologie pour une cellule</li>
+                                <li><strong>Feuille :</strong> Noeud n'ayant pas de fils</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3 id="3_7">Graphe</h3>
+                    <ul>
+                        <li><strong>Definition :</strong> <br> Ensemble de cellules reliées les unes aux autres non plus par un lien d’ascendance, comme dans le cas d’un arbre, mais par une relation. Visuellement, il s’agit d’un ensemble de sommets reliés par des arcs</li>
+                        <img id="img" src="image_python/img_10.png" alt="img_10">
+                        <li><strong>Fonctionnement  :</strong>
+                            <ul>
+                                <li><strong>Cercle :</strong> Représentation d'un élément du réseau</li>
+                                <li><strong>Arc :</strong> Trait reliant les cercles</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3 id="3_8">Triage des informations</h3>
+                    <ul>
+                        <li><strong>Tri à bulles</strong>
+                            <ul>
+                                <li><strong>Fonctionnement :</strong> <br> Il compare les données deux à deux et les échange si la première valeur est plus élevée que la seconde. Il fait cela pour toutes les paires d’éléments dans une liste puis recommence au début jusqu’à ce que toutes les paires soient dans le bon ordre</li>
+                                <li><strong>En pseudo code :</strong></li>
+                                <a href="image_python/img_12.png" target="_blank">
+                                    <img id="img" src="image_python/img_12.png" alt="img_12" />
+                                </a>
+                                <li><strong>En Python :</strong></li>
+                                <a href="image_python/img_11.png" target="_blank">
+                                    <img id="img" src="image_python/img_11.png" alt="img_11" />
+                                </a>
+                            </ul>
+                        </li>
+                        <li><strong>Autre algorithme de tri</strong>
+                            <ul>
+                                <li>
+                                    Liste des différents tris sur <a href="https://fr.wikipedia.org/wiki/Algorithme_de_tri#Comparaison_des_algorithmes" target="_blank">Wikipédia</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                <h3 id="3_9">Complexité</h3>
+                    <p>La complexité algorithmique est un concept qui permet de comparer les algorithmes afin de trouver celui qui est le plus efficace</p>
+                    <ul>
+                        <li><strong>Temporelle :</strong>
+                            <ul>
+                                <li><strong>Complexité exponentielle : 10( puissance (x) )</strong></li>
+                                <li><strong>Complexité linéaire :  10 * (x) </strong></li>
+                                <li><strong>Complexité en temps constant : <br>  Quel que soit le nombre de variable, il prend toujours le même temps </strong></li>
+                            </ul>
+                        </li>
+                        <li><strong>Spatiale :</strong> <br> Les notations sont les mêmes que pour la complexité temporelle mais elle concerne le poid du fichier lors du stokage des données</li>
+                    </ul>
+                <h3 id="3_10">Récursivité</h3>
+                    <p>La récursivité est un concept qui fait référence à lui même dans son fonctionnement. Cela se retrouve dans tous les champs (artistique / littérature / peinture...)</p>
+                    <ul>
+                        <li><strong>Récursivité croisé</strong> <br> Deux fonctions qui s' appelent mutuellement </li>
+                        <li><strong>Exemple :</strong>
+                            <br>Calcule d'une factorielle d'un entier naturel (n = 10) : <br>  1 * 2 * 3 ......* 10 = 3628800
+                            <ul>
+                                <li>
+                                    <img id="img" src="image_python/img_13.png" alt="img_13"> 
+                                </li>
+                                Cet algorithme ne s'arrête jamais ( (n = 3)  3 * 2 * 1 * 0 * -1 ... ect )
+                                <li>
+                                    <img id="img" src="image_python/img_14.png" alt="img_14">
+                                </li>
+                                <em> if / else</em> : On ajoute une instruction conditionnelle  <br> <em>return n*factorielle_recursive(n - 1)</em> :  Appel d'une fonction à l'interieur d'elle-même ( <strong>appel récursif</strong>), c'est obligatoire dans une instruction conditionnelle
+                            </ul>
+                        </li>
+                        <li><strong>Suite de Fibonacci</strong> <br> Liste de nombres entiers, on appelle un nombre de cette liste un terme et chaque terme est la somme des deux qui le précèdent.
+                            <ul>
+                                <li><strong>Algorithme récursif naïf :</strong> <br> Algorithme "simple" très proche de notre pensée première
+                                    <div id="img_15_16">
+                                        <img id="img" src="image_python/img_15.png" alt='="img_15'/>
+                                        <img id="img" src="image_python/img_16.png" alt="img_16"/>
+                                    </div>
+                                    <p>Quand nous calculons la valeur d'un nombre, nous rélaisons trois opérations :</p>
+                                    <ul>
+                                        <li><em>fibonacci(n-1)</em> : Une valeur en mémoire</li>
+                                        <li><em>fibonnaci(n-2)</em> : Une valeur en mémoire</li>
+                                        <li>Ajout des deux précédentes valeurs</li>
+                                    </ul>
+                                    <p>Chaque nouveau nombre demande deux fois plus de mémoire que son précédent <br> <strong>Sa compléxité est exponentielle : O(2^n)</strong></p>
+                                </li>
+                                <li><strong>Algorithme linéaire</strong>
+                                    <img id="img" src="image_python/img_17.png" alt="img_17"/>
+                                    <p>Chaque nouveau nombre a besoin d'un seul niveau d'opération <br> <strong>Sa complexité est linéaire : O(n)</strong></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Les piles d'appels</strong> 
+                            <ul>
+                                <li>L’ordinateur doit retenir le résultat de tous les calculs récursifs avant de finir sa boucle. Il utilise alors une <strong>pile d’appels</strong> (en anglais, stack). Celle-ci est gérée automatiquement par le système</li>
+                                <li>Lorsque la dernière fonction récursive est appelée, l’ordinateur <strong>dépile</strong>. Autrement dit, il va chercher dans la pile le dernier élément enregistré et ainsi de suite jusqu’à arriver en bas de la pile</li>
+                            </ul>   
+                        </li>
+                        <li><strong>Programmer une fonction récursive</strong>
+                            <ol>
+                                <li>Décomposer le problème en un ou plusieurs sous-problèmes du même type. On résout les sous-problèmes par des appels récursifs</li>
+                                <li>Les sous-problèmes doivent être de taille plus petite que le problème initial</li>
+                                <li>Enfin, la décomposition doit en fin de compte conduire à un élémentaire qui, lui, n’est pas décomposé en sous-problèmes (c’est la condition d’arrêt)</li>
+                            </ol>
+                            <p><strong>Structure d'une fonction récursive</strong></p>
+                            <img id="img" src="image_python/img_18.png" alt="img_18"/>
+                        </li>
+                    </ul>
+            </section>
+        </div>
+    </body>
+</html>
